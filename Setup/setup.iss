@@ -34,6 +34,7 @@ Source: "C:\Projects\IISLogCleaner\IISLogCleaner\bin\Release\IISLogCleaner.pdb";
 
 [Run]
 Filename: {sys}\sc.exe; Parameters: "create {#MyAppName} start= auto binPath= ""{app}\IISLogCleaner.exe""" ; Flags: runhidden
+Filename: {sys}\sc.exe; Parameters: "start {#MyAppName}" ; Flags: runhidden
 
 [UninstallRun]
 Filename: {sys}\sc.exe; Parameters: "stop {#MyAppName}" ; Flags: runhidden
